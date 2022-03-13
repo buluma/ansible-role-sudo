@@ -1,38 +1,94 @@
-Role Name
-=========
+# [sudo](#sudo)
 
-A brief description of the role goes here.
+Prepare your system to be managed by Ansible.
 
-Requirements
-------------
+|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-sudo/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sudo)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/sudo)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+## [Example Playbook](#example-playbook)
 
-Role Variables
---------------
+This example is taken from `molecule/default/converge.yml` and is tested on each push, pull request and release.
+```yaml
+---
+- name: Converge
+  hosts: all
+  # This role installs packages using the `raw` module and needs to connect as
+  # `root`. (`sudo` is not available before bootstrapping.) All tasks in the
+  # role have `become` set to `no`, so you can use either `no` or `yes` for
+  # `become`, the role will not use become (so `sudo`) for any task.
+  become: yes  # `no` will also work.
+  # This role installs python, gathering facts can't be done before `python` is
+  # installed. This role runs the `setup` module, so facts will be available
+  # after running the role.
+  gather_facts: no
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+  roles:
+    - role: buluma.bootstrap
+```
 
-Dependencies
-------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+## [Role Variables](#role-variables)
 
-Example Playbook
-----------------
+The default values for the variables are set in `defaults/main.yml`:
+```yaml
+---
+# defaults file for sudo
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+# Do you want to wait for the host to be available?
+bootstrap_wait_for_host: no
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+# The number of seconds you want to wait during connection test before failing.
+bootstrap_timeout: 3
+```
 
-License
--------
+## [Requirements](#requirements)
 
-BSD
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-sudo/blob/main/requirements.txt).
 
-Author Information
-------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+## [Context](#context)
+
+This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.co.ke/) for further information.
+
+Here is an overview of related roles:
+
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-sudo/png/requirements.png "Dependencies")
+
+## [Compatibility](#compatibility)
+
+This role has been tested on these [container images](https://hub.docker.com/u/buluma):
+
+|container|tags|
+|---------|----|
+|amazon|Candidate|
+|el|7, 8|
+|debian|all|
+|fedora|all|
+|opensuse|all|
+|ubuntu|all|
+
+The minimum version of Ansible required is 2.10, tests have been done to:
+
+- The previous version.
+- The current version.
+- The development version.
+
+## [Exceptions](#exceptions)
+
+Some roles can't run on a specific distribution or version. Here are some exceptions.
+
+| variation                 | reason                 |
+|---------------------------|------------------------|
+| alpine:edge | Failed to create temporary directory. |
+
+
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-sudo/issues)
+
+## [License](#license)
+
+Apache-2.0
+
+## [Author Information](#author-information)
+
+[Michael Buluma](https://buluma.github.io/)
