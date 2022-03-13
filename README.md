@@ -4,7 +4,7 @@ Install sudo on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-sudo/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sudo)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/sudo)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|
+|[![github](https://github.com/buluma/ansible-role-sudo/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sudo)|[![quality](https://img.shields.io/ansible/quality/58376)](https://galaxy.ansible.com/buluma/sudo)|[![downloads](https://img.shields.io/ansible/role/d/58376)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -24,7 +24,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   gather_facts: no
 
   roles:
-    - role: buluma.bootstrap
+    - role: buluma.sudo
 ```
 
 
@@ -36,10 +36,10 @@ The default values for the variables are set in `defaults/main.yml`:
 # defaults file for sudo
 
 # Do you want to wait for the host to be available?
-bootstrap_wait_for_host: no
+sudo_wait_for_host: no
 
 # The number of seconds you want to wait during connection test before failing.
-bootstrap_timeout: 3
+sudo_timeout: 3
 ```
 
 ## [Requirements](#requirements)

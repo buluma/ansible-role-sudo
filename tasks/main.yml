@@ -9,19 +9,19 @@
 - name: wait for port to be available
   ansible.builtin.wait_for:
     port: "{{ ansible_port | default('22') }}"
-    timeout: "{{ bootstrap_timeout }}"
+    timeout: "{{ sudo_timeout }}"
   become: no
   when:
     - ansible_connection is defined
     - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
-    - bootstrap_wait_for_host | bool
+    - sudo_wait_for_host | bool
 
 - name: prepare system
   block:
     - name: test connection
       ansible.builtin.wait_for_connection:
-        timeout: "{{ bootstrap_timeout }}"
-      register: bootstrap_connect
+        timeout: "{{ sudo_timeout }}"
+      register: sudo_connect
       changed_when: no
   rescue:
     - name: gather bootstrap facts
@@ -29,13 +29,13 @@
         file: gather_facts.yml
 
     - name: install bootstrap packages (raw)
-      ansible.builtin.raw: "{{ bootstrap_install.raw }}"
-      register: bootstrap_install_packages
+      ansible.builtin.raw: "{{ sudo_install.raw }}"
+      register: sudo_install_packages
       changed_when:
-        - (bootstrap_install.stdout_regex in bootstrap_install_packages.stdout and
-           bootstrap_os_family in [ "Alpine", "Archlinux", "Gentoo" ]) or
-          (bootstrap_install.stdout_regex not in bootstrap_install_packages.stdout and
-           bootstrap_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
+        - (sudo_install.stdout_regex in sudo_install_packages.stdout and
+           sudo_os_family in [ "Alpine", "Archlinux", "Gentoo" ]) or
+          (sudo_install.stdout_regex not in sudo_install_packages.stdout and
+           sudo_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
   become: no
 
 
@@ -48,5 +48,5 @@
       ansible.builtin.package:
         name: "{{ item }}"
         state: present
-      loop: "{{ bootstrap_facts_packages.split() }}"
+      loop: "{{ sudo_facts_packages.split() }}"
   become: no

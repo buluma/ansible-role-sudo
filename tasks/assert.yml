@@ -1,16 +1,16 @@
 ---
 
-- name: test if bootstrap_wait_for_host is set correctly
+- name: test if sudo_wait_for_host is set correctly
   ansible.builtin.assert:
     that:
-      - bootstrap_wait_for_host is defined
-      - bootstrap_wait_for_host is boolean
+      - sudo_wait_for_host is defined
+      - sudo_wait_for_host is boolean
     quiet: yes
 
-- name: test if bootstrap_timeout is set correctly
+- name: test if sudo_timeout is set correctly
   ansible.builtin.assert:
     that:
-      - bootstrap_timeout is defined
-      - bootstrap_timeout is number
-      - bootstrap_timeout >= 0
+      - sudo_timeout is defined
+      - sudo_timeout is number
+      - sudo_timeout >= 0
     quiet: yes
