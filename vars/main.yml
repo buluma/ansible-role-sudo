@@ -1,5 +1,5 @@
 ---
-# vars file for bootstrap
+# vars file for sudo
 
 _sudo_packages:
   Alpine: sudo
@@ -14,7 +14,7 @@ _sudo_packages:
   Debian_9: sudo
   RedHat_7: sudo
 
-# Map the right set of packages, based on gathered bootstrap facts.
+# Map the right set of packages, based on gathered sudo facts.
 sudo_packages: "{{ _sudo_packages[sudo_distribution ~'_'~ sudo_distribution_major_version]|default(
                      _sudo_packages[sudo_distribution] )|default(
                      _sudo_packages[sudo_os_family] ) }}"
@@ -40,7 +40,7 @@ _sudo_install:
     raw: "LANG=C zypper -n install {{ sudo_packages }}"
     stdout_regex: 'Nothing'
 
-# Map the right install command, based on gathered bootstrap facts.
+# Map the right install command, based on gathered sudo facts.
 sudo_install: "{{ _sudo_install[sudo_distribution ~'_'~ sudo_distribution_major_version]|default(
                     _sudo_install[sudo_distribution] )|default(
                     _sudo_install[sudo_os_family] ) }}"

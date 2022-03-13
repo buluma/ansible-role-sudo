@@ -1,5 +1,5 @@
 ---
-# tasks file for bootstrap
+# tasks file for sudo
 
 - name: import assert.yml
   ansible.builtin.import_tasks: assert.yml
@@ -24,11 +24,11 @@
       register: sudo_connect
       changed_when: no
   rescue:
-    - name: gather bootstrap facts
+    - name: gather sudo facts
       ansible.builtin.include_tasks:
         file: gather_facts.yml
 
-    - name: install bootstrap packages (raw)
+    - name: install sudo packages (raw)
       ansible.builtin.raw: "{{ sudo_install.raw }}"
       register: sudo_install_packages
       changed_when:
@@ -44,7 +44,7 @@
     - name: gather ansible facts
       ansible.builtin.setup:
 
-    - name: install bootstrap packages (package)
+    - name: install sudo packages (package)
       ansible.builtin.package:
         name: "{{ item }}"
         state: present

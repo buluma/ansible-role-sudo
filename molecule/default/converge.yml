@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   # This role installs packages using the `raw` module and needs to connect as
-  # `root`. (`sudo` is not available before bootstrapping.) All tasks in the
+  # `root`. (`sudo` is not available before sudo-ing.) All tasks in the
   # role have `become` set to `no`, so you can use either `no` or `yes` for
   # `become`, the role will not use become (so `sudo`) for any task.
   become: yes  # `no` will also work.

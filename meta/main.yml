@@ -30,8 +30,6 @@ galaxy_info:
         - all
 
   galaxy_tags:
-    - bootstrap
-    - python
     - sudo
 
 dependencies: []
