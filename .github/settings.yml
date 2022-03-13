@@ -3,6 +3,6 @@
 # Ansible managed
 #
 repository:
-  description: Prepare your system to be managed by Ansible.
+  description: Install sudo on your system.
   homepage: https://buluma.github.io/
   topics: bootstrap, python, sudo, ansible, molecule, tox, playbook, hacktoberfest

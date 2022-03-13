@@ -12,4 +12,4 @@
   gather_facts: no
 
   roles:
-    - role: ansible-role-bootstrap
+    - role: ansible-role-sudo

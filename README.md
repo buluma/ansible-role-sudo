@@ -1,6 +1,6 @@
 # [sudo](#sudo)
 
-Prepare your system to be managed by Ansible.
+Install sudo on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
