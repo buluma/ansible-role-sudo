@@ -8,6 +8,10 @@
 
 - add to tracker [\#2](https://github.com/buluma/ansible-role-sudo/issues/2)
 
+**Merged pull requests:**
+
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.4 to 1.0.5 [\#3](https://github.com/buluma/ansible-role-sudo/pull/3) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.3](https://github.com/buluma/ansible-role-sudo/tree/v0.1.3) (2022-03-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.2...v0.1.3)
