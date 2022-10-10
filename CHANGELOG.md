@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.1.5](https://github.com/buluma/ansible-role-sudo/tree/v0.1.5) (2022-08-08)
+
+[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.4...v0.1.5)
+
 ## [v0.1.4](https://github.com/buluma/ansible-role-sudo/tree/v0.1.4) (2022-04-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.3...v0.1.4)
