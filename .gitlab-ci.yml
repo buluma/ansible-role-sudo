@@ -20,10 +20,8 @@ molecule:
         tag: "7"
       - image: "enterpriselinux"
         tag: "8"
-      - image: "docker-ubuntu-systemd"
+      - image: "ubuntu"
         tag: "latest"
-      - image: "docker-ubuntu-systemd"
-        tag: "focal"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
 
