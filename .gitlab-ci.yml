@@ -14,12 +14,8 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "amazonlinux"
-        tag: "latest"
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "8"
       - image: "ubuntu"
         tag: "latest"
       - image: "docker-ubuntu-systemd"
