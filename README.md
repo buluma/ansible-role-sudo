@@ -1,10 +1,10 @@
-# [sudo](#sudo)
+# [Ansible role sudo](#sudo)
 
 Install sudo on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-sudo/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-sudo)|[![quality](https://img.shields.io/ansible/quality/58376)](https://galaxy.ansible.com/buluma/sudo)|[![downloads](https://img.shields.io/ansible/role/d/58376)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-sudo/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-sudo)|[![downloads](https://img.shields.io/ansible/role/d/4847)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
