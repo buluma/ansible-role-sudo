@@ -24,5 +24,8 @@ platforms:
     pre_build_image: yes
 provisioner:
   name: ansible
+  config_options:
+    defaults:
+      interpreter_python: auto_legacy_silent
 verifier:
   name: ansible
