@@ -1,10 +1,10 @@
-# [Ansible role sudo](#sudo)
+# Ansible role [sudo](https://galaxy.ansible.com/ui/standalone/roles/buluma/sudo/documentation)
 
 Install sudo on your system.
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-sudo/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-sudo/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-sudo)|[![downloads](https://img.shields.io/ansible/role/d/4847)](https://galaxy.ansible.com/buluma/sudo)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-sudo/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-sudo/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-sudo.svg)](https://github.com/buluma/ansible-role-sudo/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/sudo)](https://galaxy.ansible.com/ui/standalone/roles/buluma/sudo/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   # `root`. (`sudo` is not available before sudo-ing.) All tasks in the
   # role have `become` set to `no`, so you can use either `no` or `yes` for
   # `become`, the role will not use become (so `sudo`) for any task.
-  become: yes  # `no` will also work.
+  become: no  # `no` will also work.
   # This role installs sudo, gathering facts can't be done before `sudo` is
   # installed. This role runs the `setup` module, so facts will be available
   # after running the role.
@@ -65,7 +65,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Amazon](https://hub.docker.com/repository/docker/buluma/amazonlinux/general)|Candidate|
-|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|7, 8|
+|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|7, 8, 9|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
 |[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
 |[opensuse](https://hub.docker.com/repository/docker/buluma/opensuse/general)|all|
@@ -86,14 +86,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-sudo/blob/master/LICENSE).
+[Apache-2.0](https://github.com/buluma/ansible-role-sudo/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
