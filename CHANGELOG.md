@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-sudo/tree/HEAD)
+## [v0.1.7](https://github.com/buluma/ansible-role-sudo/tree/v0.1.7) (2024-01-01)
 
-[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.6...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.6...v0.1.7)
 
 **Closed issues:**
 
