@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-sudo/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.7...HEAD)
+
+**Merged pull requests:**
+
+- Bump actions/checkout from 3 to 4 [\#16](https://github.com/buluma/ansible-role-sudo/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#15](https://github.com/buluma/ansible-role-sudo/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v0.1.7](https://github.com/buluma/ansible-role-sudo/tree/v0.1.7) (2024-01-01)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.6...v0.1.7)
