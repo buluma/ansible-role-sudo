@@ -22,7 +22,7 @@ on:
   pull_request_target:
   schedule:
     # - cron: '37 19 19 * *'
-    - cron: '37 19 * * *'
+    - cron: '30 14 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -71,8 +71,6 @@ jobs:
             tag: "latest"
           - image: "docker-ubuntu-systemd"
             tag: "focal"
-          - image: "docker-ubuntu-systemd"
-            tag: "bionic"
           - image: "kali"
             tag: "latest"
     steps:
