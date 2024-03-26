@@ -3,13 +3,13 @@
   hosts: all
   # This role installs packages using the `raw` module and needs to connect as
   # `root`. (`sudo` is not available before sudo-ing.) All tasks in the
-  # role have `become` set to `no`, so you can use either `no` or `yes` for
+  # role have `become` set to `false`, so you can use either `false` or `true` for
   # `become`, the role will not use become (so `sudo`) for any task.
-  become: no  # `no` will also work.
+  become: false  # `false` will also work.
   # This role installs sudo, gathering facts can't be done before `sudo` is
   # installed. This role runs the `setup` module, so facts will be available
   # after running the role.
-  gather_facts: no
+  gather_facts: false
 
   roles:
     - role: ansible-role-sudo

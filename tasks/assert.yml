@@ -5,7 +5,7 @@
     that:
       - sudo_wait_for_host is defined
       - sudo_wait_for_host is boolean
-    quiet: yes
+    quiet: true
 
 - name: assert | Test if sudo_timeout is set correctly
   ansible.builtin.assert:
@@ -13,4 +13,4 @@
       - sudo_timeout is defined
       - sudo_timeout is number
       - sudo_timeout >= 0
-    quiet: yes
+    quiet: true

@@ -3,27 +3,27 @@
 
 - name: Import assert.yml
   ansible.builtin.import_tasks: assert.yml
-  run_once: yes
+  run_once: true
   delegate_to: localhost
 
 - name: Wait for port to be available
   ansible.builtin.wait_for:
     port: "{{ ansible_port | default('22') }}"
     timeout: "{{ sudo_timeout }}"
-  become: no
+  become: false
   when:
     - ansible_connection is defined
     - ansible_connection not in [ "container", "docker", "community.docker.docker" ]
     - sudo_wait_for_host | bool
 
 - name: Prepare system
-  become: no
+  become: false
   block:
     - name: Test connection
       ansible.builtin.wait_for_connection:
         timeout: "{{ sudo_timeout }}"
       register: sudo_connect
-      changed_when: no
+      changed_when: false
   rescue:
     - name: Gather sudo facts
       ansible.builtin.include_tasks:
@@ -39,7 +39,7 @@
            sudo_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
 
 - name: Ensure system is prepared
-  become: no
+  become: false
   block:
     - name: Gather ansible facts
       ansible.builtin.setup:
