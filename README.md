@@ -16,13 +16,13 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   hosts: all
   # This role installs packages using the `raw` module and needs to connect as
   # `root`. (`sudo` is not available before sudo-ing.) All tasks in the
-  # role have `become` set to `no`, so you can use either `no` or `yes` for
+  # role have `become` set to `false`, so you can use either `false` or `true` for
   # `become`, the role will not use become (so `sudo`) for any task.
-  become: no  # `no` will also work.
+  become: false  # `false` will also work.
   # This role installs sudo, gathering facts can't be done before `sudo` is
   # installed. This role runs the `setup` module, so facts will be available
   # after running the role.
-  gather_facts: no
+  gather_facts: false
 
   roles:
     - role: buluma.sudo
@@ -34,8 +34,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -52,7 +52,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for sudo
 
 # Do you want to wait for the host to be available?
-sudo_wait_for_host: no
+sudo_wait_for_host: false
 
 # The number of seconds you want to wait during connection test before failing.
 sudo_timeout: 3
