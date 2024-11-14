@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump ansible/ansible-lint from 24.9.0 to 24.9.2 [\#27](https://github.com/buluma/ansible-role-sudo/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.7.0 to 24.9.0 [\#26](https://github.com/buluma/ansible-role-sudo/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v24.3.31](https://github.com/buluma/ansible-role-sudo/tree/v24.3.31) (2024-03-29)
@@ -14,7 +15,6 @@
 
 **Merged pull requests:**
 
-- Bump dependabot/fetch-metadata from 1 to 2 [\#25](https://github.com/buluma/ansible-role-sudo/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#22](https://github.com/buluma/ansible-role-sudo/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-sudo/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#20](https://github.com/buluma/ansible-role-sudo/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
