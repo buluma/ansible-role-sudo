@@ -12,4 +12,4 @@
   gather_facts: false
 
   roles:
-    - role: ansible-role-sudo
+    - role: buluma.sudo
