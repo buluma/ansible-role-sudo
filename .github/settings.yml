@@ -5,4 +5,4 @@
 repository:
   description: Install sudo on your system.
   homepage: https://buluma.github.io/
-  topics: sudo, ansible, molecule, tox, playbook
+  topics: sudo, ansible, molecule, playbook
