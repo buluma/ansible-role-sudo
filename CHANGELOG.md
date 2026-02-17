@@ -4,6 +4,11 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v24.3.31...HEAD)
 
+**Closed issues:**
+
+- Update action [\#13](https://github.com/buluma/ansible-role-sudo/issues/13)
+- rebuild action [\#12](https://github.com/buluma/ansible-role-sudo/issues/12)
+
 **Merged pull requests:**
 
 - Bump ansible/ansible-lint from 24.9.2 to 24.10.0 [\#28](https://github.com/buluma/ansible-role-sudo/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
