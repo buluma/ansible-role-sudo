@@ -1,5 +1,4 @@
 ---
-
 - name: gather_facts | Lookup sudo facts
   ansible.builtin.raw: "cat /etc/os-release"
   become: false
@@ -10,8 +9,8 @@
 - name: gather_facts | Set sudo facts (I)
   ansible.builtin.set_fact:
     sudo_distribution: "{{ item }}"
-    sudo_distribution_major_version: "{{ sudo_facts.stdout_lines | join(',') | regex_replace(
-                                           '^.*VERSION_ID=\"(\\d{1,2})(\\.\\d{1,4})*?\".*$','\\1') | default('NA') }}"
+    sudo_distribution_major_version: "{{ sudo_facts.stdout_lines | join(',') | regex_replace('^.*VERSION_ID=\"(\\d{1,2})(\\.\\d{1,4})*?\".*$', '\\1') | default('NA')
+      }}"
   loop: "{{ sudo_os_family_map | dict2items | map(attribute='value') | flatten }}"
   when:
     - sudo_facts.rc == 0

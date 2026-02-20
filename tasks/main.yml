@@ -33,10 +33,8 @@
       ansible.builtin.raw: "{{ sudo_install.raw }}"
       register: sudo_install_packages
       changed_when:
-        - (sudo_install.stdout_regex in sudo_install_packages.stdout and
-           sudo_os_family in [ "Alpine", "Archlinux", "Gentoo" ]) or
-          (sudo_install.stdout_regex not in sudo_install_packages.stdout and
-           sudo_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
+        - (sudo_install.stdout_regex in sudo_install_packages.stdout and sudo_os_family in [ "Alpine", "Archlinux", "Gentoo" ]) or (sudo_install.stdout_regex
+          not in sudo_install_packages.stdout and sudo_os_family in [ "Debian", "RedHat", "Rocky", "Suse" ])
 
 - name: Ensure system is prepared
   become: false

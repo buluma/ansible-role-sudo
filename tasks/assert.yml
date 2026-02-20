@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test if sudo_wait_for_host is set correctly
   ansible.builtin.assert:
     that:
