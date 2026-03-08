@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Bump docker/setup-buildx-action from 3 to 4 [\#31](https://github.com/buluma/ansible-role-sudo/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.9.2 to 24.10.0 [\#28](https://github.com/buluma/ansible-role-sudo/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.9.0 to 24.9.2 [\#27](https://github.com/buluma/ansible-role-sudo/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.7.0 to 24.9.0 [\#26](https://github.com/buluma/ansible-role-sudo/pull/26) ([dependabot[bot]](https://github.com/apps/dependabot))
