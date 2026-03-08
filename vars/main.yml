@@ -16,7 +16,8 @@ _sudo_packages:
   RedHat_7: sudo
 
 # Map the right set of packages, based on gathered sudo facts.
-sudo_packages: "{{ _sudo_packages[sudo_distribution ~'_'~ sudo_distribution_major_version]|default( _sudo_packages[sudo_distribution] )|default( _sudo_packages[sudo_os_family]
+sudo_packages:
+  "{{ _sudo_packages[sudo_distribution ~'_'~ sudo_distribution_major_version]|default( _sudo_packages[sudo_distribution] )|default( _sudo_packages[sudo_os_family]
   ) }}"
 
 _sudo_install:
@@ -40,7 +41,8 @@ _sudo_install:
     stdout_regex: "Nothing"
 
 # Map the right install command, based on gathered sudo facts.
-sudo_install: "{{ _sudo_install[sudo_distribution ~'_'~ sudo_distribution_major_version]|default( _sudo_install[sudo_distribution] )|default( _sudo_install[sudo_os_family]
+sudo_install:
+  "{{ _sudo_install[sudo_distribution ~'_'~ sudo_distribution_major_version]|default( _sudo_install[sudo_distribution] )|default( _sudo_install[sudo_os_family]
   ) }}"
 
 # See URL for available OS families and search queries
@@ -83,12 +85,23 @@ sudo_os_family_map:
     - EulerOS
     - openEuler
     - AlmaLinux
-  Suse: [SLED, openSUSE Tumbleweed, openSUSE Leap, SLES_SAP, SUSE_LINUX, SLES, openSUSE, SuSE]
+  Suse:
+    [
+      SLED,
+      openSUSE Tumbleweed,
+      openSUSE Leap,
+      SLES_SAP,
+      SUSE_LINUX,
+      SLES,
+      openSUSE,
+      SuSE,
+    ]
 sudo_search:
   Archlinux: "Arch Linux"
   OracleLinux: "Oracle Linux"
   RedHat: "Red Hat"
 
 # Map the right set of packages, based on gathered ansible_facts.
-sudo_facts_packages: "{{ _sudo_packages[ansible_distribution ~'_'~ ansible_distribution_major_version]|default( _sudo_packages[ansible_distribution] )|default( _sudo_packages[ansible_os_family]
+sudo_facts_packages:
+  "{{ _sudo_packages[ansible_distribution ~'_'~ ansible_distribution_major_version]|default( _sudo_packages[ansible_distribution] )|default( _sudo_packages[ansible_os_family]
   ) }}"
