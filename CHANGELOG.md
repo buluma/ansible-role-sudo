@@ -30,16 +30,13 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.2.0...v0.3.0)
 
-**Merged pull requests:**
-
-- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#19](https://github.com/buluma/ansible-role-sudo/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
-
 ## [v0.2.0](https://github.com/buluma/ansible-role-sudo/tree/v0.2.0) (2024-01-11)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.1.7...v0.2.0)
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#19](https://github.com/buluma/ansible-role-sudo/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 3 to 4 [\#16](https://github.com/buluma/ansible-role-sudo/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#15](https://github.com/buluma/ansible-role-sudo/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
 
