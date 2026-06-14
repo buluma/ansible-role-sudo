@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-sudo/tree/HEAD)
+## [v26.6.0](https://github.com/buluma/ansible-role-sudo/tree/v26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v24.3.31...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v24.3.31...v26.6.0)
 
 **Closed issues:**
 
@@ -24,11 +24,14 @@
 
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#22](https://github.com/buluma/ansible-role-sudo/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-sudo/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump release-drafter/release-drafter from 5 to 6 [\#20](https://github.com/buluma/ansible-role-sudo/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.3.0](https://github.com/buluma/ansible-role-sudo/tree/v0.3.0) (2024-01-28)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v0.2.0...v0.3.0)
+
+**Merged pull requests:**
+
+- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#19](https://github.com/buluma/ansible-role-sudo/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v0.2.0](https://github.com/buluma/ansible-role-sudo/tree/v0.2.0) (2024-01-11)
 
@@ -36,7 +39,7 @@
 
 **Merged pull requests:**
 
-- Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#19](https://github.com/buluma/ansible-role-sudo/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump release-drafter/release-drafter from 5 to 6 [\#20](https://github.com/buluma/ansible-role-sudo/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump actions/checkout from 3 to 4 [\#16](https://github.com/buluma/ansible-role-sudo/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gh-action-auto-merge-dependabot-updates from 1.0.5 to 1.0.8 [\#15](https://github.com/buluma/ansible-role-sudo/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
 
