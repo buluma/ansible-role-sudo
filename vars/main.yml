@@ -103,5 +103,5 @@ sudo_search:
 
 # Map the right set of packages, based on gathered ansible_facts.
 sudo_facts_packages:
-  "{{ _sudo_packages[ansible_facts.distribution ~'_'~ ansible_facts.distribution_major_version]|default( _sudo_packages[ansible_facts.distribution] )|default( _sudo_packages[ansible_facts.os_family]
+  "{{ _sudo_packages[ansible_facts['distribution'] ~'_'~ ansible_facts['distribution_major_version']]|default( _sudo_packages[ansible_facts['distribution']] )|default( _sudo_packages[ansible_facts['os_family']]
   ) }}"
