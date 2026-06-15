@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-sudo/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v26.6.0...HEAD)
+
+**Implemented enhancements:**
+
+- Allow to disable `ansible.builtin.setup` \(gathering facts\) [\#11](https://github.com/buluma/ansible-role-sudo/issues/11)
+
 ## [v26.6.0](https://github.com/buluma/ansible-role-sudo/tree/v26.6.0) (2026-06-14)
 
 [Full Changelog](https://github.com/buluma/ansible-role-sudo/compare/v24.3.31...v26.6.0)
