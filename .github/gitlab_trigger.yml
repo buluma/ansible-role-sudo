@@ -1,7 +1,7 @@
 ---
 name: Mirror and run GitLab CI
 
-on:
+"on":
   push:
     branches:
       - master
@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-"on": ubuntu-latest
     env:
       SLACK_WEBHOOK_URL: "${{ secrets.SLACK_WEBHOOK_URL }}"
     steps:
